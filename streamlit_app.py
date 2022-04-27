@@ -49,7 +49,7 @@ my_cur.execute("show tables")
 my_data_row = my_cur.fetchone()
 streamlit.text("Table data contains")
 streamlit.text(my_data_row)
-stream lit.text("Datas are stored in dataframe")
+streamlit.text("Datas are stored in dataframe")
 streamlit.dataframe(my_data_row)
 
 
