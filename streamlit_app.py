@@ -54,3 +54,6 @@ streamlit.text(my_data_row)
 streamlit.text("Table data contains fetch all")
 my_data_row = my_cur.fetchall()
 streamlit.dataframe(my_data_row)
+
+
+my_cur.execute("select * from garder_plants.veggies.vegetable_details")
