@@ -56,4 +56,4 @@ my_data_row = my_cur.fetchall()
 streamlit.dataframe(my_data_row)
 
 
-my_cur.execute("select * from garder_plants.veggies.vegetable_details")
+my_cur.execute("insert into vegetable_details values('from streamlit','D')")
