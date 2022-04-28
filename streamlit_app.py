@@ -50,7 +50,7 @@ def get_fruityvice_data(this_fruit_choice):
     fruityvice_response = requests.get("https://fruityvice.com/api/fruit/" + fruit_choice)
     fruityvice_normalized = pandas.json_normalize(fruityvice_response.json())
     return fruityvice_normalized
-
+'''
 streamlit.header('Fruityvice Fruit Advice function!')
 try:
     fruity_choice = streamlit.text_input('what food would you like information about ?')
@@ -62,7 +62,7 @@ try:
 
 except URLError as e:
     streamlit.error()         
-    
+'''
                                         
 #streamlit.stop()
 
